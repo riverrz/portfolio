@@ -7,17 +7,17 @@ import {
 export const socialLinks = {
   Twitter: {
     label: "Twitter",
-    icon: <TwitterLogoIcon className="w-6 h-6" />,
+    Icon: TwitterLogoIcon,
     path: "https://twitter.com/shivam123425",
   },
   LinkedIn: {
     label: "LinkedIn",
-    icon: <LinkedInLogoIcon className="w-6 h-6" />,
+    Icon: LinkedInLogoIcon,
     path: "https://www.linkedin.com/in/shivam-kumar-85a660164/",
   },
   Github: {
     label: "Github",
-    icon: <GitHubLogoIcon className="w-6 h-6" />,
+    Icon: GitHubLogoIcon,
     path: "https://github.com/riverrz",
   },
 };
