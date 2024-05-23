@@ -10,7 +10,7 @@ export const NavBar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="static w-full flex items-center justify-between p-6 sm:p-11 font-secondary z-10">
+    <nav className="fixed w-full flex items-center justify-between p-6 sm:p-11 font-secondary z-10">
       <div className="flex items-center flex-wrap gap-x-4 gap-y-2">
         <div className="h-4 w-4 bg-primary" />
         <p className="text-xl sm:text-2xl">
@@ -19,7 +19,7 @@ export const NavBar = () => {
           </Link>
         </p>
         <div className="hidden sm:block text-sm">/</div>
-        <p className="text-lg tracking-wide uppercase">Software Engineer</p>
+        <p className="text-lg tracking-widest font-light uppercase">Software Engineer</p>
       </div>
       <div className="hidden sm:flex justify-end gap-8">
         {Object.values(Routes).map(({ label, path }) => (
