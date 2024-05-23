@@ -9,7 +9,7 @@ export default function Home() {
       <div className="h-full order-2 flex-grow md:order-1 md:flex-grow-0 md:basis-2/5 bg-accent relative">
         <div className="relative md:absolute min-w-[60vw] md:top-[50%] md:right-0 md:translate-x-[75%] md:translate-y-[-50%] flex items-center flex-col md:gap-10 md:flex-row">
           <PersonalFloatingCard className="h-[480px] md:h-auto w-[90%] absolute translate-y-[-25%] sm:translate-y-0 sm:static" />
-          <div className="mt-[420px] md:mt-0 self-start w-full p-6 mx-auto sm:self-auto">
+          <div className="mt-[450px] md:mt-0 self-start w-full p-6 mx-auto sm:self-auto">
             <p className="font-primary text-5xl md:text-8xl font-bold mb-4 ">
               Hello
             </p>
@@ -20,11 +20,6 @@ export default function Home() {
               <Link href={Routes.resume.path}>
                 <Button variant="primary" className="uppercase">
                   {Routes.resume.label}
-                </Button>
-              </Link>
-              <Link href={Routes.projects.path}>
-                <Button variant="secondary" className="uppercase">
-                  {Routes.projects.label}
                 </Button>
               </Link>
             </div>

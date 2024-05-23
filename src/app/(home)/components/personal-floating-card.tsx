@@ -20,6 +20,7 @@ export const PersonalFloatingCard = ({ className }: Props) => {
             src={PersonalPic}
             alt="Shivam Kumar"
             width={200}
+            height={200}
             className="rounded-3xl"
             priority
           />
@@ -35,11 +36,6 @@ export const PersonalFloatingCard = ({ className }: Props) => {
           <Link href={Routes.resume.path}>
             <Button variant="primary" className="uppercase">
               {Routes.resume.label}
-            </Button>
-          </Link>
-          <Link href={Routes.projects.path}>
-            <Button variant="secondary" className="uppercase">
-              {Routes.projects.label}
             </Button>
           </Link>
         </div>
