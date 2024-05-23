@@ -10,7 +10,7 @@ export const NavBar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed w-full flex items-center justify-between p-6 sm:p-11 font-secondary z-10">
+    <nav className="fixed bg-white w-full flex items-center justify-between p-6 sm:p-8 font-secondary z-10">
       <div className="flex items-center flex-wrap gap-x-4 gap-y-2">
         <div className="h-4 w-4 bg-primary" />
         <p className="text-xl sm:text-2xl">
