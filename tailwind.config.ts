@@ -17,6 +17,8 @@ const config: Config = {
       },
       backgroundColor: {
         primary: "#0050FF",
+        accent: "rgb(230, 218, 206)",
+        accentLight: "rgb(244, 236, 230)",
       },
     },
   },
