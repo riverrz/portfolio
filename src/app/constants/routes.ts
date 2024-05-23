@@ -7,4 +7,8 @@ export const Routes = {
     label: "Resume",
     path: "/resume",
   },
+  projects: {
+    label: "Projects",
+    path: "/projects",
+  }
 };
