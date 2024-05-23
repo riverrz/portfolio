@@ -1,4 +1,6 @@
+import { Button } from "@/app/components/common/button";
 import { Card } from "@/app/components/common/card";
+import { Routes } from "@/app/constants/routes";
 import { socialLinks } from "@/app/constants/socials";
 import PersonalPic from "@/assets/images/pic.jpg";
 import Image from "next/image";
@@ -26,9 +28,21 @@ export const PersonalFloatingCard = ({ className }: Props) => {
           Shivam <br /> Kumar
         </h1>
         <div className="w-12 h-1 bg-primary mb-6" />
-        <h2 className="font-secondary text-lg tracking-widest font-light uppercase">
+        <h2 className="hidden sm:block font-secondary text-lg tracking-widest font-light uppercase">
           Software Engineer
         </h2>
+        <div className="my-4 sm:hidden flex items-center gap-4">
+          <Link href={Routes.resume.path}>
+            <Button variant="primary" className="uppercase">
+              {Routes.resume.label}
+            </Button>
+          </Link>
+          <Link href={Routes.projects.path}>
+            <Button variant="secondary" className="uppercase">
+              {Routes.projects.label}
+            </Button>
+          </Link>
+        </div>
       </div>
       <div className="flex items-center justify-center gap-6 bg-white p-4">
         {Object.values(socialLinks).map(({ Icon, label, path }) => (

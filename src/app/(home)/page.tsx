@@ -1,4 +1,7 @@
+import Link from "next/link";
 import { PersonalFloatingCard } from "./components/personal-floating-card";
+import { Button } from "../components/common/button";
+import { Routes } from "../constants/routes";
 
 export default function Home() {
   return (
@@ -13,6 +16,18 @@ export default function Home() {
             <p className="font-secondary font-semibold text-xl md:text-lg mb-6 md:mb-8">
               Here&apos;s who I am & what I do
             </p>
+            <div className="my-4 hidden md:flex items-center gap-4">
+              <Link href={Routes.resume.path}>
+                <Button variant="primary" className="uppercase">
+                  {Routes.resume.label}
+                </Button>
+              </Link>
+              <Link href={Routes.projects.path}>
+                <Button variant="secondary" className="uppercase">
+                  {Routes.projects.label}
+                </Button>
+              </Link>
+            </div>
             <p className="font-secondary text-lg font-light">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
               eveniet, saepe quam fuga quis autem non iure aspernatur temporibus
