@@ -24,10 +24,9 @@ export default function Home() {
               </Link>
             </div>
             <p className="font-secondary text-lg font-light sm:mt-12">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
-              eveniet, saepe quam fuga quis autem non iure aspernatur temporibus
-              dolores? Soluta ipsum enim iste. Neque veritatis sint at nulla
-              porro.
+              Frontend software engineer with 4+ years of experience in building
+              and maintaining high traffic web applications, currently residing
+              in Abu Dhabi UAE.
             </p>
           </div>
         </div>
