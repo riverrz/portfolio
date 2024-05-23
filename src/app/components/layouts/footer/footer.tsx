@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer className="w-full flex flex-col p-6 font-secondary gap-4 sm:flex-row sm:items-center sm:justify-between  sm:p-11">
       <div className="text-sm order-2 sm:order-1">
-        <p className="mb-2">© {new Date().getFullYear()} by Shivam Kumar.</p>
+        <p className="mb-1">© {new Date().getFullYear()} by Shivam Kumar.</p>
         <p>Powered by imagination</p>
       </div>
       <div className="text-md order-1 sm:order-2 flex items-center flex-wrap gap-8">

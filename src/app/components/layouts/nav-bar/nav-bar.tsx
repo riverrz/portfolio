@@ -18,7 +18,7 @@ export const NavBar = () => {
             Shivam Kumar
           </Link>
         </p>
-        <div className="hidden sm:block text-xs">/</div>
+        <div className="hidden sm:block text-sm">/</div>
         <p className="text-lg tracking-wide uppercase">Software Engineer</p>
       </div>
       <div className="hidden sm:flex justify-end gap-8">
