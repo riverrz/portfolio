@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer className="w-full flex flex-col p-6 font-secondary gap-4 sm:flex-row sm:items-center sm:justify-between sm:p-8">
       <div className="text-sm order-2 sm:order-1">
         <p className="mb-1">© {new Date().getFullYear()} by Shivam Kumar.</p>
-        <p>Powered by imagination</p>
+        <p>Powered by my imagination 🚀</p>
       </div>
       <div className="text-md order-1 sm:order-2 flex items-center justify-between flex-wrap gap-8">
         <div>
