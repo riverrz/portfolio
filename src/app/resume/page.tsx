@@ -39,9 +39,9 @@ const ResumePage = async () => {
           return (
             <Card
               key={`${workItem.company}-${i}`}
-              className="p-6 sm:px-12 font-secondary sm:flex sm:justify-between sm:items-center"
+              className="p-6 sm:px-12 font-secondary sm:flex sm:justify-between py-4"
             >
-              <div className="sm:flex-1">
+              <div className="sm:flex-1 sm:my-4">
                 <div className="text-primary font-primary text-xl font-bold mb-2 sm:text-2xl">
                   {workItem.company}
                 </div>
@@ -76,7 +76,7 @@ const ResumePage = async () => {
 
                 <div className="text-sm sm:text-md">{workItem.description}</div>
               </div>
-              <div className="my-4 sm:text-lg sm:flex-1 tracking-wide">
+              <div className="sm:flex-1 tracking-wide">
                 <ul>
                   {workItem.highlights.map((highlight, i) => (
                     <li className="my-4 flex gap-2 items-start" key={i}>
