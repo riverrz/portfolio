@@ -14,7 +14,7 @@ interface Props {
 export const PersonalFloatingCard = ({ className }: Props) => {
   return (
     <Card className={className}>
-      <div className="py-6 px-11 sm:py-11 flex flex-col justify-center items-center bg-accentLight">
+      <div className="py-6 px-11 sm:py-8 flex flex-col justify-center items-center bg-accentLight">
         <div className="relative mb-4">
           <Image
             src={PersonalPic}

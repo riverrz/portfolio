@@ -11,7 +11,7 @@ export const NavBar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed h-[100px] bg-white w-full flex items-center justify-between p-6 sm:p-8 font-secondary z-10">
+    <nav className="fixed h-[80px] bg-white w-full flex items-center justify-between p-6 sm:p-8 font-secondary z-10">
       <div className="flex items-center flex-wrap gap-x-4 gap-y-2">
         <Badge />
         <p className="text-xl sm:text-2xl">
