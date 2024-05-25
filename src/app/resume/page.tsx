@@ -1,11 +1,18 @@
 import Link from "next/link";
 import { Badge } from "../components/common/badge";
-import { getResumeJSON } from "../services/resume/resume";
+
 import { Button } from "../components/common/button";
 import { Card } from "../components/common/card";
+import { getPersonalData } from "../services/personal-data/personal-data";
+import {
+  CalendarIcon,
+  Link2Icon,
+  SewingPinFilledIcon,
+  TriangleRightIcon,
+} from "@radix-ui/react-icons";
 
-export default async function ResumePage() {
-  const resumeData = await getResumeJSON();
+const ResumePage = async () => {
+  const personalData = await getPersonalData();
 
   return (
     <div className="container mx-auto mt-16 py-12 px-6 h-full w-full">
@@ -17,7 +24,7 @@ export default async function ResumePage() {
       </div>
       <div className="flex items-center justify-between">
         <h2 className="font-bold font-primary text-lg sm:text-2xl">
-          Experience
+          Work Experience
         </h2>
         <Link
           href={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/resume.pdf`}
@@ -28,29 +35,53 @@ export default async function ResumePage() {
         </Link>
       </div>
       <div className="my-8 flex flex-col gap-12">
-        {resumeData.work.map((workItem, i) => {
+        {personalData.work.map((workItem, i) => {
           return (
             <Card
               key={`${workItem.company}-${i}`}
               className="p-6 sm:px-12 font-secondary sm:flex sm:justify-between sm:items-center"
             >
               <div className="sm:flex-1">
-                <div className="text-primary font-primary text-lg font-bold mb-2 sm:text-xl">
-                  {workItem.startDate} - {workItem.endDate}
-                </div>
-                <div className="text-lg uppercase mb-4">
-                  {workItem.position}
-                </div>
-                <div className="font-thin uppercase mb-2">
+                <div className="text-primary font-primary text-xl font-bold mb-2 sm:text-2xl">
                   {workItem.company}
                 </div>
-                <div className="font-thin uppercase">{workItem.location}</div>
+                {workItem.website && (
+                  <div className="mb-2 text-xs flex items-center gap-2">
+                    <Link2Icon />
+                    <Link
+                      href={workItem.website}
+                      target="_blank"
+                      className="text-primary"
+                    >
+                      {workItem.website}
+                    </Link>
+                  </div>
+                )}
+                <div className="uppercase mb-4 text-sm">
+                  {workItem.position}
+                </div>
+                <div className="font-thin uppercase mb-4 text-xs sm:text-sm flex items-center gap-4">
+                  <div className="flex items-center gap-2">
+                    <CalendarIcon className="h-4 w-4" />
+                    <span>
+                      {workItem.start_date} - {workItem.end_date}
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    <SewingPinFilledIcon className="h-4 w-4" />
+                    <span>{workItem.location}</span>
+                  </div>
+                </div>
+
+                <div className="text-sm sm:text-md">{workItem.description}</div>
               </div>
-              <div className="my-4 text-lg sm:flex-1 tracking-wide	">
+              <div className="my-4 sm:text-lg sm:flex-1 tracking-wide">
                 <ul>
                   {workItem.highlights.map((highlight, i) => (
-                    <li className="my-4" key={i}>
-                      {highlight}
+                    <li className="my-4 flex gap-2 items-start" key={i}>
+                      <TriangleRightIcon className="h-4 w-4 my-2" />{" "}
+                      <span className="flex-1">{highlight}</span>
                     </li>
                   ))}
                 </ul>
@@ -61,4 +92,6 @@ export default async function ResumePage() {
       </div>
     </div>
   );
-}
+};
+
+export default ResumePage;
