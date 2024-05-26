@@ -27,7 +27,7 @@ export const PersonalFloatingCard = ({ className, data }: Props) => {
             priority
           />
         </div>
-        <h1 className="text-xl font-primary font-semibold lg:text-2xl mb-4">
+        <h1 className="text-xl font-primary font-semibold lg:text-2xl mb-4 text-center">
           Shivam Kumar
         </h1>
         <div className="w-12 h-1 bg-primary mb-6" />
