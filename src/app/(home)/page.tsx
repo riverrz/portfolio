@@ -12,12 +12,14 @@ const Home = async () => {
     <div className="h-full w-full flex flex-col-reverse lg:flex-row">
       <div className="h-full flex-grow lg:flex-grow-0 lg:basis-2/5 bg-accent relative">
         <div className="relative lg:absolute min-w-[60vw] lg:top-[50%] lg:right-0 lg:translate-x-[75%] lg:translate-y-[-45%] flex items-center flex-col lg:gap-10 lg:flex-row">
-          <PersonalFloatingCard
-            data={personalData}
-            className="lg:h-auto w-[90%] absolute translate-y-[-25%] lg:translate-y-0 lg:static"
-          />
-          <div className="mt-[420px] lg:mt-0 self-start w-full p-6 mx-auto lg:self-auto">
-            <p className="font-primary text-5xl lg:text-8xl font-bold mb-4 ">
+          <div className="lg:h-auto w-[90%] absolute translate-y-[-25%] lg:translate-y-0 lg:static">
+            <p className="lg:hidden font-primary text-4xl lg:text-8xl font-bold mb-8">
+              Hello 👋
+            </p>
+            <PersonalFloatingCard data={personalData} />
+          </div>
+          <div className="mt-[480px] lg:mt-0 self-start w-full p-6 mx-auto lg:self-auto">
+            <p className="hidden lg:block font-primary text-5xl lg:text-8xl font-bold mb-4 ">
               Hello
             </p>
             <p className="font-secondary font-semibold text-xl lg:text-2xl mb-6 lg:mb-8">
@@ -42,7 +44,7 @@ const Home = async () => {
           </div>
         </div>
       </div>
-      <div className="min-h-72 lg:h-full lg:flex-grow"></div>
+      <div className="min-h-64 lg:h-full lg:flex-grow"></div>
     </div>
   );
 };

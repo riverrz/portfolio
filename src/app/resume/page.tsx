@@ -30,7 +30,7 @@ const ResumePage = async () => {
           <Link
             href={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/resume.pdf`}
             target="_blank"
-            className="text-lg sm:text-xl"
+            className="text-md"
           >
             <Button variant="primary">Download</Button>
           </Link>

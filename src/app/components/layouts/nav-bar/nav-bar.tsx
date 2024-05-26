@@ -14,13 +14,13 @@ export const NavBar = () => {
     <nav className="fixed h-[80px] bg-white w-full flex items-center justify-between p-6 md:p-8 font-secondary z-10">
       <div className="flex items-center flex-wrap gap-x-4 gap-y-2">
         <Badge />
-        <p className="text-xl md:text-2xl">
+        <p className="text-sm md:text-2xl">
           <Link href="/" className="no-underline font-primary">
             Shivam Kumar
           </Link>
         </p>
         <div className="hidden md:block text-sm">/</div>
-        <p className="text-lg tracking-widest font-light uppercase">
+        <p className="text-md tracking-widest font-light uppercase">
           Software Engineer
         </p>
       </div>
