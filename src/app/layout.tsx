@@ -25,10 +25,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${nunito.variable}`}>
-      <body className="lg:flex lg:flex-col lg:h-screen">
+    <html lang="en" className={`${poppins.variable} ${nunito.variable} h-full w-full`}>
+      <body className="relative w-full lg:flex lg:flex-col lg:h-screen">
         <NavBar />
-        <main className="min-h-screen lg:min-h-0 lg:flex-1 overflow-auto">{children}</main>
+        <main className="lg:flex-1 lg:overflow-auto">{children}</main>
         <Footer />
       </body>
     </html>

@@ -28,10 +28,10 @@ export const PersonalFloatingCard = ({ className, data }: Props) => {
           />
         </div>
         <h1 className="text-xl font-primary font-semibold lg:text-2xl mb-4">
-          Shivam <br /> Kumar
+          Shivam Kumar
         </h1>
         <div className="w-12 h-1 bg-primary mb-6" />
-        <h2 className="hidden lg:block font-secondary text-lg tracking-widest font-light uppercase">
+        <h2 className="hidden lg:block font-secondary text-lg tracking-widest font-light uppercase text-center">
           Software Engineer
         </h2>
         <div className="my-4 lg:hidden flex items-center gap-4">

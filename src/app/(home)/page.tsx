@@ -14,9 +14,9 @@ const Home = async () => {
         <div className="relative lg:absolute min-w-[60vw] lg:top-[50%] lg:right-0 lg:translate-x-[75%] lg:translate-y-[-45%] flex items-center flex-col lg:gap-10 lg:flex-row">
           <PersonalFloatingCard
             data={personalData}
-            className="h-[480px] lg:h-auto w-[90%] absolute translate-y-[-25%] lg:translate-y-0 lg:static"
+            className="lg:h-auto w-[90%] absolute translate-y-[-25%] lg:translate-y-0 lg:static"
           />
-          <div className="mt-[450px] lg:mt-0 self-start w-full p-6 mx-auto lg:self-auto">
+          <div className="mt-[420px] lg:mt-0 self-start w-full p-6 mx-auto lg:self-auto">
             <p className="font-primary text-5xl lg:text-8xl font-bold mb-4 ">
               Hello
             </p>
