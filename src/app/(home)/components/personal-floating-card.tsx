@@ -16,7 +16,7 @@ interface Props {
 export const PersonalFloatingCard = ({ className, data }: Props) => {
   return (
     <Card className={className}>
-      <div className="py-6 px-11 sm:py-8 flex flex-col justify-center items-center bg-accentLight">
+      <div className="py-6 px-11 lg:py-8 flex flex-col justify-center items-center bg-accentLight">
         <div className="relative mb-4">
           <Image
             src={PersonalPic}
@@ -27,14 +27,14 @@ export const PersonalFloatingCard = ({ className, data }: Props) => {
             priority
           />
         </div>
-        <h1 className="text-xl font-primary font-semibold sm:text-2xl mb-4">
+        <h1 className="text-xl font-primary font-semibold lg:text-2xl mb-4">
           Shivam <br /> Kumar
         </h1>
         <div className="w-12 h-1 bg-primary mb-6" />
-        <h2 className="hidden sm:block font-secondary text-lg tracking-widest font-light uppercase">
+        <h2 className="hidden lg:block font-secondary text-lg tracking-widest font-light uppercase">
           Software Engineer
         </h2>
-        <div className="my-4 sm:hidden flex items-center gap-4">
+        <div className="my-4 lg:hidden flex items-center gap-4">
           <Link href={Routes.resume.path}>
             <Button variant="primary" className="uppercase">
               {Routes.resume.label}
@@ -54,7 +54,7 @@ export const PersonalFloatingCard = ({ className, data }: Props) => {
               key={label}
               title={label}
             >
-              <Icon className="w-6 h-6 sm:w-8 sm:h-8" />
+              <Icon className="w-6 h-6 lg:w-8 lg:h-8" />
             </Link>
           );
         })}

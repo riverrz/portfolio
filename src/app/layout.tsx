@@ -26,9 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.variable} ${nunito.variable}`}>
-      <body className="sm:flex sm:flex-col sm:h-screen">
+      <body className="lg:flex lg:flex-col lg:h-screen">
         <NavBar />
-        <main className="min-h-screen sm:min-h-0 sm:flex-1 overflow-auto">{children}</main>
+        <main className="min-h-screen lg:min-h-0 lg:flex-1 overflow-auto">{children}</main>
         <Footer />
       </body>
     </html>
