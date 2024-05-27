@@ -15,7 +15,7 @@ const ResumePage = async () => {
   const personalData = await getPersonalData();
 
   return (
-    <div className="container mx-auto py-12 px-6 h-full w-full">
+    <div className="container mx-auto py-12 px-6 w-full">
       <div className="my-8">
         <div className="flex items-center justify-center gap-4">
           <Badge />
